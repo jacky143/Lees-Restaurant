@@ -1,0 +1,321 @@
+@import 'base'
+*
+{
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+  
+}
+
+*
+.row{
+    max-width:1140px;
+    margin: 0 auto;
+}
+body{
+    font-family: Arial, Helvetica,san-serif;
+    background-color: black;
+    height: 100%;
+
+
+}
+
+
+header{
+  background-color: black;
+  color: #333;
+  padding: 40px;
+}
+
+
+.logo img{
+  width:170px;
+  height: auto;
+  float: left;
+  padding: 30px;
+}
+
+.main-nav{
+  list-style: none;
+  float:right;
+  margin: auto;
+}
+
+.main-nav li{
+display: inline-block;
+margin-left: 30px;
+margin-top: 40px; 
+
+}
+
+.main-nav li a{
+  color: white;
+  text-decoration: none;
+  font-size: 90%;
+  font-weight: bold;
+}
+.main-nav li a:hover{
+  color:white;
+  border-bottom: 2px solid white;
+  transition: all 0.5s ease-in;
+  padding: 15px 0;
+}
+
+.main{
+	margin-top: 30px;
+
+}
+/* End of navigation*/
+/*feedback page*/
+
+.review{
+	height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+h1{
+    color: white;
+    text-align: center;
+    line-height: 2.0em;
+}
+h3{
+  color: white;
+  text-align: center;
+  line-height: 7.0em;
+}
+p{
+  color: white;
+  font-style: helvetica, san-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 2.0em;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body { background:rgb(30,30,40); }
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid white;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #f2f2f2; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:black;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:grey; }
+
+
+/*End of feedback page*/
+/*homepage start*/
+.rom{
+  display:flex;
+  
+}
+
+.column{
+  flex:33.33%;
+  padding:30px;
+  font-size: 20px;
+}
+.container{
+	width: auto;
+	height: 100%;
+}
+
+.responsive{
+	width: 100%;
+	height: auto;
+}
+
+.myMap{
+	position:center;
+	height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+/* end of homepage*/
+/*start of gallery*/
+*{
+	box-sizing: border-box;
+}
+.container{
+	postion:relative;
+}
+
+
+.roll{
+	display:none;	
+}
+
+.cursor{
+	pointer;
+}
+
+.prev,.next{
+  cursor:pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.galleryslides {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.pic::after{
+	content:"";
+	clear:both;
+	display: table;
+}
+.highlight{
+	float:left;
+	width:12.66%;
+}
+.demo{
+	opacity:0.7;
+
+}
+.active,demo:hover{
+	opacity: 1;
+
+/* feedback page starts*/
+
+.feedback-title{
+	margin: 100px;
+	color: #fff;
+	transition:  all 4s ease-in-out;
+}
+
+.feedback-title h1{
+	font-size: 32px;
+	line-height: 10px;
+	font: helvetica;
+}
+
+.feedback-title h3{
+	font-size: 16px;
+
+}
+
+* {box-sizing: border-box;}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float:inherit;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+}
+
+/*  end of feed back*/
+
+
+
+
+
+
+
+
+
+
+
+/*   footer   */
+.footer{
+  text-align: center;
+  font:cursive;
+  font-size: 14px;
+  padding:400px;
+}
